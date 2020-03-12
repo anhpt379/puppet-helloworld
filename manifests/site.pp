@@ -4,4 +4,8 @@ node default {
     content => 'This is a README',
     owner   => 'vagrant'
   }
+
+  file {'/root/README.md':
+    owner => 'root',
+  }
 }
